@@ -1,0 +1,74 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+    background-color: white;
+    height: calc( 100vh - 20px );
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    color:white;
+}
+
+/** Flex Container here **/
+.flex-container {
+    display: flex;
+    /* display: inline-flex; */
+    border: 5px solid black;
+
+    /* ---- flex-direction ---- */
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; 
+    flex-direction: column;
+    flex-direction: column-reverse; */
+
+    /* ---- flex-wrap ---- */
+    /* wrap things together to prevent overflow */
+    /* easy way to create a rwd layout */
+
+    /* flex-wrap: nowrap; (default) */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; (item goes back (up)) */
+
+    /* Flex Flow */
+    /* to set for the direction and wrap at the same time */
+    /* Direction / Wrap */
+    /* flex-flow: row wrap; */
+}
+
+.flex-element {
+    padding: 10px;
+    background-color: #E53935;
+
+    /* Flex Grow */
+    flex-grow: 1;
+}
+
+.flex-element:nth-child(1) {
+    /* flex-grow: 0;
+    flex-shrink:0;
+    flex-basis: 600px; */
+    /* shorthand with flex */
+    /* grow | shrink | basis */
+    flex: 0 0 600px;
+}
+
+
+.flex-element:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.flex-element:nth-child(3) {
+    background-color: #3F51B5;
+}
